@@ -126,7 +126,8 @@
             <p class="fs-400 text-neutral-100 fw-semi-bold">Customer care</p>
           </li>
         </ul>
-        <ul class="coin-prices flex" role="list">
+        <div class="coin-prices">
+        <ul class="flex" role="list">
           <li class="fs-400 fw-semi-bold">
             1BTC = $29,000 <span class="text-red">-0.38%</span>
           </li>
@@ -143,13 +144,14 @@
             1ADA = $0.6 <span class="text-green">+0.02%</span>
           </li>
         </ul>
+        </div>
       </section>
       <section class="showcase container even-columns">
         <div class="flow" style="--flow-spacer: 1rem">
-          <h1 class="fs-900 text-primary-200 fw-bold">
+          <h1 data-width="wide" class="fs-900 text-primary-200 fw-bold">
             Store your cryptocurrencies in a safe and secure wallet
           </h1>
-          <p class="fs-600 fw-regular">
+          <p data-width="wide" class="fs-600 fw-regular">
             With mercurial, you could buy, and store your cryptocurrency in a
             secure wallet
           </p>
@@ -164,12 +166,12 @@
           <img src="./images/fund-via-aminat.svg" alt="features" />
         </div>
         <div class="flow" style="--flow-spacer: 1rem">
-          <h1 class="fs-900 text-primary-200 fw-bold">
+          <h1 data-width="wide" class="fs-900 text-primary-200 fw-bold">
             Accept Crypto, get paid in your local currencies
           </h1>
-          <p class="fs-600 fw-regular">
+          <p data-width="wide" class="fs-600 fw-regular">
             Recieve funds to your Bank account with zero price volatility or
-            risk. Get paid in Bitcoin,Etherium,XRP and many more from anyone
+            risk. <br> Get paid in Bitcoin,Etherium,XRP and many more from anyone
             anywhere and get settlement in your local currency instantly.
           </p>
           <button type="button" style="--flow-spacer: 1.875rem">
@@ -239,115 +241,158 @@
         </ul>
       </section>
       <section class="testimony bg-primary-400">
-        <h2 class="fs-800 fw-bold text-neutral-100">Listen to what others have to say about Mercurial</h2>
-        <div class="carousel container even-columns">
+        <h2 class="fs-800 fw-bold text-neutral-100">
+          Listen to what others have to say about Mercurial
+        </h2>
+        <div class="carousel-wrapper flex container">
+        <!-- <div class="carousel container even-columns">
           <div class="testimony-image"></div>
           <div>
-          <ul aria-label="rating" role="list" class="flex">
-            <li><img src="./images/star.svg" /></li>
-            <li><img src="./images/star.svg" /></li>
-            <li><img src="./images/star.svg" /></li>
-            <li><img src="./images/star.svg" /></li>
-            <li><img src="./images/star.svg" /></li>
-          </ul>
-          <p class="fs-600 fw-regular text-neutral-100">
-            Mercurial is one of the best crypto exchange platform out there.
-            They are fastand reliable the fact that theycan make me withdraw my
-            funds to my local bank make me give them 5 star rating.
-          </p>
-          <p class="fs-600 fw-regular text-neutral-100">~Simon Jones</p>
+            <ul aria-label="rating" role="list" class="flex">
+              <li><img src="./images/star.svg" /></li>
+              <li><img src="./images/star.svg" /></li>
+              <li><img src="./images/star.svg" /></li>
+              <li><img src="./images/star.svg" /></li>
+              <li><img src="./images/star.svg" /></li>
+            </ul>
+            <p class="fs-600 fw-regular text-neutral-100">
+              Mercurial is one of the best crypto exchange platform out there.
+              They are fastand reliable the fact that theycan make me withdraw
+              my funds to my local bank make me give them 5 star rating.
+            </p>
+            <p class="fs-600 fw-regular text-neutral-100">~Simon Jones</p>
           </div>
+        </div> -->
         </div>
-        <input type="image" src="./images/arrow.svg" alt="left" />
-        <input type="image" src="./images/arrow.svg" alt="left" />
+        <div class="flex container">
+        <div class="scroll-bar" style="text-align:center">
+          <!-- <span class="bar"></span>
+          <span class="bar" style="opacity: 0;"></span>
+          <span class="bar" style="opacity: 0;"></span> -->
+        </div>
+        <nav class="carousel-nav flex">
+          <input
+            type="image"
+            src="./images/arrow.svg"
+            alt="left"
+            id="prev-btn"
+          />
+          <input
+            type="image"
+            src="./images/arrow.svg"
+            alt="left"
+            id="next-btn"
+          />
+        </nav>
+        </div>
+      
       </section>
       <section class="faq container">
-        <h1 class="fs-900 text-primary-200 fw-bold">Frequently <span class="text-secondary-600">asked questions</span></h1>
+        <h1 class="fs-900 text-primary-200 fw-bold">
+          Frequently <span class="text-secondary-600">asked questions</span>
+        </h1>
         <p data-width="wide">
           If you are not sure whether Mercurial is suitable for you or not,dont
           worry. We are here to explain everything you might want to know
         </p>
         <div>
-          <div class="flex">
+          <div class="flex accordion">
             <p class="fw-bold">
               What is the minimum amount of money you can withdraw to your local
               bank?
             </p>
-            <img src="./images/plus-icon.svg" />
+            <p class="fw-bold">
+              You can withdraw as low as $1 to your local bank.
+            </p>
           </div>
-          <div class="flex">
+          <div class="flex accordion">
             <p class="fw-bold">Who can open Mercurial account?</p>
-            <img src="./images/plus-icon.svg" />
+            <p class="fw-bold">
+              Individuals and business organisation
+            </p>
           </div>
-          <div class="flex">
+          <div class="flex accordion">
             <p class="fw-bold">What document do i need to verify my account?</p>
-            <img src="./images/plus-icon.svg" />
+            <p class="fw-bold">
+              Any goverent issued id card or international passsport
+            </p>
           </div>
-          <div class="flex">
+          <div class="flex accordion">
             <p class="fw-bold">Can I swap my crypto with Mercurial?</p>
-            <img src="./images/plus-icon.svg" />
+            <p class="fw-bold">
+              Yes ,you can swap fro one cryptocurrency to another
+            </p>
           </div>
-          <div class="flex">
-            <p class="fw-bold">What happens if I find it difficult to verify my account?</p>
-            <img src="./images/plus-icon.svg" />
+          <div class="flex accordion">
+            <p class="fw-bold">
+              What happens if I find it difficult to verify my account?
+            </p>
+            <p class="fw-bold">
+              You might not be able to experienc the full functionality of mercurial
+            </p>
           </div>
         </div>
         <div class="flex">
-        <h2 class="fs-800 fw-bold text-primary-400">Get started with $2 or less, start now</h2>
-        <button type="button">Get started</button>
+          <h2 class="fs-800 fw-bold text-primary-400">
+            Get started with $2 or less, start now
+          </h2>
+          <button type="button">Get started</button>
         </div>
       </section>
     </main>
     <footer class="bg-primary-200">
-      <div class="container even-columns">
-      <div>
-        <div class="logo flex">
-          <img src="./images/mecurial-logo.svg" alt="mercurial" /> mercurial
+      <div class="even-columns">
+        <div class="flow" style="--flow-spacer: 1rem">
+          <div class="logo flex">
+            <img src="./images/mecurial-logo.svg" alt="mercurial" /> mercurial
+          </div>
+          <p class="fw-semi-bold">
+            Buy and sell faster using the Roqqu mobile app, available on Google
+            playstore.
+          </p>
+          <img src="./images/google-play.png" alt="download" />
         </div>
-        <p>
-          Buy and sell faster using the Roqqu mobile app, available on Google
-          playstore.
-        </p>
-        <img src="./images/google-play.png" alt="download" />
+        <nav class="footer-nav">
+          <table aria-label="footer">
+            <tr class="fw-bold fs-500">
+              <th>Developers</th>
+              <th>Support</th>
+              <th>Company</th>
+              <th>Social</th>
+            </tr>
+            <tr>
+              <td><a href="#">Overview</a></td>
+              <td><a href="#">Knowledge base</a></td>
+              <td><a href="#">Blog</a></td>
+              <td class="flex" aria-label="social links">
+                <a href="#" aria-label="twitter"
+                  ><img src="./images/twitter-logo.svg" alt="twitter"
+                /></a>
+                <a href="#" aria-label="facebook"
+                  ><img src="./images/facebook-logo.svg" alt="facebook"
+                /></a>
+                <a href="#" aria-label="instagram"
+                  ><img src="./images/instagram-logo.svg" alt="instagram"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">Integrations</a></td>
+              <td><a href="#">Help</a></td>
+              <td><a href="#">Legal</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Technical help</a></td>
+              <td><a href="#">FAQ</a></td>
+              <td><a href="#">Privacy policy</a></td>
+            </tr>
+          </table>
+        </nav>
       </div>
-      <nav class="footer-nav">
-        <table aria-label="footer">
-          <tr>
-            <th>Developers</th>
-            <th>Support</th>
-            <th>Company</th>
-            <th>Social</th>
-          </tr>
-          <tr>
-            <td><a href="#">Overview</a></td>
-            <td><a href="#">Knowledge base</a></td>
-            <td><a href="#">Blog</a></td>
-            <td aria-label="social links">
-              <a href="#" aria-label="twitter"
-                ><img src="./images/twitter-logo.svg" alt="twitter"
-              /></a>
-              <a href="#" aria-label="facebook"
-                ><img src="./images/facebook-logo.svg" alt="facebook"
-              /></a>
-              <a href="#" aria-label="instagram"
-                ><img src="./images/instagram-logo.svg" alt="instagram"
-              /></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="#">Integrations</a></td>
-            <td><a href="#">Help</a></td>
-            <td><a href="#">Legal</a></td>
-          </tr>
-          <tr>
-            <td><a href="#">Technical help</a></td>
-            <td><a href="#">FAQ</a></td>
-            <td><a href="#">Privacy policy</a></td>
-          </tr>
-        </table>
-      </nav>
-    </div>
-      <p>Copyright © 2022 Mercurial All right reserved</p>
+      <p class="container fs-400 fw-regular">
+        Copyright © 2022 Mercurial All right reserved
+      </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
